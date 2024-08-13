@@ -99,3 +99,10 @@ Para o funcionamento do sistema de forma a satisfazer todas as *Personas* descri
 
 8. Eficiência Energética:
     * O sistema deve ser otimizado para consumo mínimo de energia, especialmente se for utilizado em dispositivos móveis.
+
+9. Tecnologias Aplicadas:
+    * A principio utilizaremos, para o Front End Angular, juntamente com alguns frameworks; para o Back End pensamos em utiliar o Next; utilizaremos um banco de dados relacional: Postgree.
+
+10. Cenário de Desenvolvimento:
+    * O PDV será criado para ser executado em Desktop e Mobile; utilizaremos de ferramentas de experiência de usuário para realizar o projeto da melhor e mais eficaz maneira.
+
