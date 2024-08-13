@@ -1,4 +1,4 @@
-# Sistema de PDV - Restauranto App
+# Sistema de PDV - Restaurantto App
 
 ## Introdução
  
