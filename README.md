@@ -1,8 +1,9 @@
 # Sistema de PDV - Restaurantto App
 
 ## Introdução
- 
-### Motivação 
+
+### Motivação
+
 O Restauranto nasceu da necessidade de automatizar processos em restaurantes e lanchonetes. Este sistema de gerenciamento foi projetado especificamente para atender às demandas desse setor, aumentando a produtividade de todos os envolvidos no restaurante: desde o chefe de cozinha, que cria e disponibiliza as receitas no cardápio, até o cliente, que pode acessar o menu digital e fazer pedidos diretamente pelo sistema.
 
 ### Contexto Atual
@@ -11,24 +12,27 @@ Vivemos em um momento em que a automação de tarefas é essencial em diversos s
 
 1. Cardápio Digital
 
-2. Sistema de delivery
+2. Controle de Caixa
 
-3. Pagamento facilitado
+3. Sistema de delivery
+
+4. Pagamento facilitado
+
+5. Controle de estoque
 
 ## Perfis de Usuário
 
-### Persona 1 - Cliente 
+### Persona 1 - Cliente
 
 Os clientes são um dos pilares do sistema, com acesso ao cardápio digital do restaurante. Eles têm duas funções principais no sistema:
 
 1. Escolha de itens do cardápio: Os clientes podem acessar o cardápio, informar ao garçom os itens desejados e as quantidades. Nesta modalidade, os clientes apenas visualizam os itens do cardápio.
 
-
 2. Realização de pedidos via delivery: Os clientes podem fazer pedidos por meio de plataformas como iFood, e o sistema reconhece automaticamente esses pedidos através de uma integração.
 
 ### Persona 2 - Garçom
 
-Os garçons atuam como intermediários entre os clientes e a cozinha, sendo responsáveis pelo lançamento dos pedidos no sistema, com detalhes sobre quantidade e itens solicitados.
+Os garçons atuam como intermediários entre os clientes e a cozinha, sendo responsáveis pelo lançamento dos pedidos no sistema, com detalhes sobre quantidade e itens solicitados, quando os clientes optarem por ir ao restaurante.
 
 ### Persona 3 - Chefe de Cozinha
 
@@ -38,15 +42,15 @@ Os chefes de cozinha gerenciam os pedidos realizados, podendo adicionar, listar,
 
 Os gerentes têm acesso a todas as funcionalidades do sistema, além de uma área administrativa exclusiva, onde podem ver informações como faturamento, número de vendas, entre outras.
 
-
 ## Requisitos Funcionais e Não-Funcionais do projeto
 
 ### Requisitos funcionais
 
 Para o funcionamento do sistema de forma a satisfazer todas as *Personas* descritas, temos os seguintes requisitos:
 
-1. Gerenciamento de Pedidos: 
+1. Gerenciamento de Pedidos:
     * O sistema deve permitir que os chefes de cozinha recebam e visualizem os pedidos enviados pelo garçom em tempo real.
+    * O sistema deve permitir que os garçons criem pedidos **personalizados**, isto é, os itens do cardápio são personalizáveis.
     * O sistema deve permitir que os pedidos feitos via plataformas de aplicativo, como Ifood e Rappi, sejam visualizados pelos chefes de cozinha.
     * O sistema deve permitir a marcação dos pedidos em **status**, estes, como: "em preparação", "em espera" e "pronto para servir" (ou "em entrega").
 
@@ -64,6 +68,7 @@ Para o funcionamento do sistema de forma a satisfazer todas as *Personas* descri
 
 6. Gerenciamento de Ingredientes:
     * O sistema deve permitir o controle de estoque de ingredientes, alertando a equipe quando o nível de um item estiver baixo.
+    * O sistema deve alertar aos usuários quando um ingrediente estiver em falta, tornando o status do pedido realizado
 
 7. Interface de Usuário para Chefes e Cozinheiros:
     * O sistema deve oferecer uma interface amigável para que os chefs e cozinheiros possam acessar rapidamente as informações necessárias para a preparação dos pratos.
@@ -101,8 +106,7 @@ Para o funcionamento do sistema de forma a satisfazer todas as *Personas* descri
     * O sistema deve ser otimizado para consumo mínimo de energia, especialmente se for utilizado em dispositivos móveis.
 
 9. Tecnologias Aplicadas:
-    * A principio utilizaremos, para o Front End Angular, juntamente com alguns frameworks; para o Back End pensamos em utiliar o NestJS; utilizaremos um banco de dados relacional: PostgreSQL.
+    * A principio utilizaremos tecnologias e frameworks de desenvolvimento, tais quais: Angular (Front-end), NestJS (Back-end), PostgreSQL (Banco de Dados) e Kotlin (mobile).
 
-10. Cenário de Desenvolvimento:
-    * O PDV será criado para ser executado em Desktop e Mobile; utilizaremos de ferramentas de experiência de usuário para realizar o projeto da melhor e mais eficaz maneira.
-
+10. Cenário de Execução:
+    * O PDV será criado para ser executado em desktop e mobile. Utilizaremos de ferramentas de experiência de usuário para realizar o projeto da melhor e mais eficaz maneira.
